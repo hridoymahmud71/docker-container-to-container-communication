@@ -7,7 +7,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - 3334:3000
+      - 8888:8000
 
 networks: 
   default: 
