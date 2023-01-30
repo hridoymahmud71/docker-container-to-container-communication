@@ -6,7 +6,7 @@ app.use(express.json());
 
 var config = {
     method: 'get',
-    url: 'http://localhost:3336/data',
+    url: 'http://host.docker.internal:3336/data',
     headers: {}
 };
 
