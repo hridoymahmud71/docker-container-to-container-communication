@@ -5,7 +5,7 @@ services:
     build: 
       dockerfile: Dockerfile
     ports:
-      - 5555:5000
+      - 3334:3000
 
 networks: 
   default: 

@@ -4,18 +4,18 @@ const app     = express();
 
 app.use(express.json());
 
-app.listen(6000, () => {
+app.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
 
-// app.get("/container-2", (req, res) => {
-//     res.send({
-//         id: 1,
-//         name: 'Container 2'
-//     })
-// });
+app.get("/container-2", (req, res) => {
+    res.send({
+        id: 1,
+        name: 'Container 2'
+    })
+});
 
-// app.get('/data', (req, res) => {
-//     res.send("Hello from container 2. calling from container 1");
+app.get('/data', (req, res) => {
+    res.send("Hello from container 2. calling from container 1");
     
-// });
+});
